@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label >First Number</label>
+    <input type="text" id="firstnum"><br>
+    <label>Second Number</label>
+    <input type="text" id="Secnum"><br>
+    <button onclick="addition()">addition</button>
+    <br>
+    <output id="op"></output>
+    <script>
+        function addition(){
+            let x,y,res;
+            x=+firstnum.value;
+            y=+Secnum.value;
+
+            res=x+y;
+            //document.write("sum is "+ res);
+            op.value="the sum is " + res;
+            //alert("sum is "+res);
+        }
+    </script>
+</body>
+</html>

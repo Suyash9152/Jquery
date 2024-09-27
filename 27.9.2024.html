@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("button.a").click(function(){
+            $("p").hide();
+            $("h2").hide();
+          });
+        });
+
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("button.b").click(function(){
+                $("p").show();
+                $("h2").show();
+              });
+            });
+            
+            </script>
+            <script>
+                $(document).ready(function(){
+                  $("button.c").click(function(){
+                    $("p").color("red");
+                    $("h2").color("blue");
+                  });
+                });
+                
+                </script>
+    <title>Document</title>
+
+</head>
+<body>
+    <h2>this is suyash</h2>
+    <p>today is friday.we are going to make a code using jQuery.</p>
+    <p>lets see the implementation of jQuery</p>
+    <button class="a">hide me</button>
+    <button class="b">show me</button>
+    <button class="c">colour me</button>
+
+</body>
+</html>

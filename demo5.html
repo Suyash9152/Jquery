@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h3>element properties</h3>
+   <h1 id = "head">Hello</h1>
+   <input type="text" id="tb1" name="tb1" value="1000">
+   <hr>
+   <script>
+    const h1=document.getElementById("head");
+    document.write(`${h1.innerText}<br>`);
+    const tb= document.getElementById("tb1");
+     document.write(`${tb.value}<br>`);
+
+     //tb.value=1234;
+     //tb.value+=`apples`;
+     //tb.value=` `;
+     tb.value+=3;
+   </script> 
+</body>
+</html>

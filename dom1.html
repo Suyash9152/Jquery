@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h3>demo on documents methods</h3>
+    <h1 id="heading">hello world</h1>
+    <input type="radio" id="r1" name="color"/><label>Green</label> &nbsp;
+    <input type="radio" id="r2" name="color"/><label>Blue</label> &nbsp;
+    <input type="radio" id="r3" name="color"/><label>Red</label>;
+   <hr>
+   <script>
+    const h1 = document.querySelector("h1");
+		//changing h1 color
+		document.querySelector("#r1").onchange=function() { h1.style.color="green"; }
+		document.querySelector("#r2").onchange=function() { h1.style.color="blue"; }
+		document.querySelector("#r3").onchange=function() { h1.style.color="red"; }
+        let hob=document.getElementById("heading");
+        document.write(`${hob}<br>`);
+
+        const rob=document.getElementByName("color");
+        document.write(`${rob}<br>`);
+        
+    </script>
+        <label>Selector Background color</label> <br> 
+        <input type="color" id="b">
+     <script>
+         document.getElementById("b").onchange=function(){
+            document.body.style.backgroundColor= b.value;
+         }
+    </script>
+</body>
+</html>
